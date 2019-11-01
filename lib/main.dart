@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:transparent_image/transparent_image.dart';
+import 'package:k_on/home.dart';
+import 'dart:async';
 
 void main() => runApp(Splash());
 
@@ -7,6 +8,9 @@ class Splash extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      routes: <String, WidgetBuilder>{
+        '/home': (BuildContext context) => Homepage(),
+      },
       home: SplashApp(),
     );
   }
@@ -18,6 +22,22 @@ class SplashApp extends StatefulWidget {
 }
 
 class _SplashAppState extends State<SplashApp> {
+  startTime() async {
+    var _duration = new Duration(seconds: 3);
+
+    return Timer(_duration, navigationPage);
+  }
+
+  void navigationPage() {
+    Navigator.of(context).pushReplacementNamed("/home");
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    startTime();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
