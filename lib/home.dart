@@ -23,27 +23,28 @@ class _HomepageState extends State<Homepage> {
     final makeBottom = Container(
       height: 55.0,
       child: BottomAppBar(
+        color: Color(0xFFF6F9DA),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.home),
-              color: Colors.blue,
+              color: Color(0xFFDB1110),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.person),
-              color: Colors.blue,
+              color: Color(0xFFDB1110),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.music_note),
-              color: Colors.blue,
+              color: Color(0xFFDB1110),
               onPressed: () {},
             ),
             IconButton(
               icon: Icon(Icons.contacts),
-              color: Colors.blue,
+              color: Color(0xFFDB1110),
               onPressed: () {},
             ),
           ],
@@ -56,9 +57,9 @@ class _HomepageState extends State<Homepage> {
       appBar: AppBar(
         title: Text(
           'K-ON',
-          style: TextStyle(color: Colors.blue),
+          style: TextStyle(color: Color(0xFFDB1110)),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xFFF6F9DA),
       ),
       bottomNavigationBar: makeBottom,
     );
