@@ -59,16 +59,136 @@ class _HomepageState extends State<Homepage> {
       ),
     );
 
+    var bodyContent = SafeArea(
+      child: Center(
+        child: Column(
+          children: <Widget>[
+            Image(
+              image: AssetImage('images/k-on-logo.png'),
+              width: 350.0,
+              height: 145.0,
+            ),
+            Container(
+              width: 350.0,
+              child: Card(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Image.asset(
+                    'images/yui.png',
+                    width: 50.0,
+                  ),
+                  title: Text(
+                    'Hirasawa Yui',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Color(0xFF00CC71),
+                    ),
+                  ),
+                  subtitle: Text('Guitarist & Vocal'),
+                  onTap: () {},
+                ),
+              ),
+            ),
+            Container(
+              width: 350.0,
+              child: Card(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Image.asset(
+                    'images/mio.png',
+                    width: 50.0,
+                  ),
+                  title: Text(
+                    'Akiyama Mio',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Color(0xFF00CC71),
+                    ),
+                  ),
+                  subtitle: Text('Bassist & Vocal'),
+                  onTap: () {},
+                ),
+              ),
+            ),
+            Container(
+              width: 350.0,
+              child: Card(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Image.asset(
+                    'images/ritsu.png',
+                    width: 50.0,
+                  ),
+                  title: Text(
+                    'Tainaka Ritsu',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Color(0xFF00CC71),
+                    ),
+                  ),
+                  subtitle: Text('Drummer'),
+                  onTap: () {},
+                ),
+              ),
+            ),
+            Container(
+              width: 350.0,
+              child: Card(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Image.asset(
+                    'images/mugi.png',
+                    width: 50.0,
+                  ),
+                  title: Text(
+                    'Kotobuki Tsumugi',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Color(0xFF00CC71),
+                    ),
+                  ),
+                  subtitle: Text('Piano'),
+                  onTap: () {},
+                ),
+              ),
+            ),
+            Container(
+              width: 350.0,
+              child: Card(
+                color: Colors.white,
+                child: ListTile(
+                  leading: Image.asset(
+                    'images/azusa.png',
+                    width: 50.0,
+                  ),
+                  title: Text(
+                    'Nakano Azusa',
+                    style: TextStyle(
+                      fontSize: 15.0,
+                      color: Color(0xFF00CC71),
+                    ),
+                  ),
+                  subtitle: Text('Guitarist'),
+                  onTap: () {},
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
     return Scaffold(
       backgroundColor: Color(0xFFF6F9DA),
       appBar: AppBar(
         title: Text(
-          'K-ON',
+          'Home',
           style: TextStyle(color: Color(0xFFDB1110)),
         ),
         backgroundColor: Color(0xFFF6F9DA),
       ),
       bottomNavigationBar: makeBottom,
+      body: bodyContent,
     );
   }
 }
