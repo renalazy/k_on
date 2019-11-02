@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:k_on/about.dart';
 
 void main() => runApp(Home());
 
@@ -45,7 +46,13 @@ class _HomepageState extends State<Homepage> {
             IconButton(
               icon: Icon(Icons.contacts),
               color: Color(0xFFDB1110),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AboutPage(),
+                    ));
+              },
             ),
           ],
         ),
