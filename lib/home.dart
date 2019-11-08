@@ -81,7 +81,7 @@ class _HomepageState extends State<Homepage> {
                     'Hirasawa Yui',
                     style: TextStyle(
                       fontSize: 15.0,
-                      color: Color(0xFF00CC71),
+                      color: Color(0xFFDB1110),
                     ),
                   ),
                   subtitle: Text('Guitarist & Vocal'),
@@ -102,7 +102,7 @@ class _HomepageState extends State<Homepage> {
                     'Akiyama Mio',
                     style: TextStyle(
                       fontSize: 15.0,
-                      color: Color(0xFF00CC71),
+                      color: Color(0xFFDB1110),
                     ),
                   ),
                   subtitle: Text('Bassist & Vocal'),
@@ -123,7 +123,7 @@ class _HomepageState extends State<Homepage> {
                     'Tainaka Ritsu',
                     style: TextStyle(
                       fontSize: 15.0,
-                      color: Color(0xFF00CC71),
+                      color: Color(0xFFDB1110),
                     ),
                   ),
                   subtitle: Text('Drummer'),
@@ -144,7 +144,7 @@ class _HomepageState extends State<Homepage> {
                     'Kotobuki Tsumugi',
                     style: TextStyle(
                       fontSize: 15.0,
-                      color: Color(0xFF00CC71),
+                      color: Color(0xFFDB1110),
                     ),
                   ),
                   subtitle: Text('Piano'),
@@ -165,7 +165,7 @@ class _HomepageState extends State<Homepage> {
                     'Nakano Azusa',
                     style: TextStyle(
                       fontSize: 15.0,
-                      color: Color(0xFF00CC71),
+                      color: Color(0xFFDB1110),
                     ),
                   ),
                   subtitle: Text('Guitarist'),
